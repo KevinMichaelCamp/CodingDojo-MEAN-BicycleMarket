@@ -1,0 +1,14 @@
+<div *ngIf="bike" class="page-header mb-5">
+  <h3>{{bike.title}}</h3>
+</div>
+<div *ngIf="bike" class="row">
+  <div class="col">
+    <img [src]="bike.imgurl" alt="bike_img">
+  </div>
+  <div class="col">
+    <p class="lead">Price: {{ bike.price | currency }}</p>
+    <p class="lead">Location: {{ bike.location }}</p>
+    <p class="lead">Description: {{ bike.description }}</p>
+    <a [routerLink]="['/market']" class="btn">Back to Market</a>
+  </div>
+</div>

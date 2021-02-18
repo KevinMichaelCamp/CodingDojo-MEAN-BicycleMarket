@@ -1,0 +1,10 @@
+#img {
+  background-image: url(../static/unique-white-gold-bicycle-on-grey-wall-web-header.jpg);
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+}
+
+h3 {
+  color: white;
+}

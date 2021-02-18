@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+a:hover {
+  color: white;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.accent {
+  color: #e8491d;
+}
+
+.btn {
+  background-color: #e8491d;
+  color: #fff;
+  padding: 0 5px;
+}
+
+.dark {
+  background-color: #35424a;
+}
+
+.red {
+  color: red;
+}

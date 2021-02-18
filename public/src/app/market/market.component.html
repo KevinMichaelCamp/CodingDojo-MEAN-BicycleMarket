@@ -1,0 +1,15 @@
+<div *ngIf="bikes" class="page-header mb-5">
+  <h3>Bicycle Market - All Bikes</h3>
+</div>
+<div class="row">
+  <div *ngFor="let bike of bikes" class="col-4">
+    <div class="card">
+      <h6>{{ bike.title }}</h6>
+      <img [src]="bike.imgurl" alt="bikeimg">
+      <p class="small">{{ bike.description }}</p>
+      <p class="small">{{ bike.location }}</p>
+      <p class="small inline">{{ bike.price | currency }}</p>
+      <a [routerLink]="['/viewbike/' + bike._id]" class="btn btn-sm">View Bike</a>
+    </div>
+  </div>
+</div>

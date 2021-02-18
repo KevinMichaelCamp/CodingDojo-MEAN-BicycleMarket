@@ -1,0 +1,16 @@
+<div *ngIf="bike" class="container">
+  <h3>Edit Bike</h3>
+  <form (submit)="onEditBike()" class="form w-75">
+    <input class="form-control" type="text" [ngModel]="bike.title" (ngModelChange)="bike.title = $event" name="title"
+      placeholder="title">
+    <input class="form-control" type="number" step=".01" [ngModel]="bike.price" (ngModelChange)="bike.price = $event"
+      name="price" placeholder="price">
+    <input class="form-control" type="text" [ngModel]="bike.location" (ngModelChange)="bike.location = $event"
+      name="location" placeholder="location">
+    <input class="form-control" type="text" [ngModel]="bike.imgurl" (ngModelChange)="bike.imgurl = $event" name="imgurl"
+      placeholder="imgurl">
+    <textarea class="form-control" [ngModel]="bike.description" (ngModelChange)="bike.description = $event"
+      name="description" placeholder="description"></textarea>
+    <button class="btn mb-2" type="submit">Submit</button>
+  </form>
+</div>

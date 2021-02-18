@@ -1,0 +1,22 @@
+<div *ngIf="user" class="container">
+  <div id="img">
+    <h3 class="p-2">Welcome, {{ user.firstName }} {{ user.lastName }}!</h3>
+  </div>
+  <div class="row mt-5 mb-5">
+    <div class="col">
+      <p class="lead">Bicycle Marketplace</p>
+      <p class="small">View all bicycles from all users in bicycles marketplace.</p>
+      <a [routerLink]="['/market']" class="btn">Market</a>
+    </div>
+    <div class="col">
+      <p class="lead">Add Bicycle</p>
+      <p class="small">Enter new bicycle info into the marketplace for other users to view.</p>
+      <a [routerLink]="['/addbike']" class="btn">Add Bike</a>
+    </div>
+    <div class="col">
+      <p class="lead">User Profile</p>
+      <p class="small">View your user profile and bikes listed by you. You may edit user and bike info from here.</p>
+      <a [routerLink]="['/profile']" class="btn">Profile</a>
+    </div>
+  </div>
+</div>

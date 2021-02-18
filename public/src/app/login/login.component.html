@@ -1,0 +1,13 @@
+<div class="page-header mb-5">
+  <h3>Login</h3>
+</div>
+<div class="container">
+  <form class="form w-75" (submit)="onLogin()">
+    <input class="form-control" [(ngModel)]="email" name="email" type="email" placeholder="email">
+    <input class="form-control" [(ngModel)]="password" name="password" type="password" placeholder="password">
+    <button class="btn" type="submit">Submit</button>
+  </form>
+</div>
+<div class="mt-5">
+  <p class="lead">For demo purposes use email: jdoe@aol.com | password: password</p>
+</div>

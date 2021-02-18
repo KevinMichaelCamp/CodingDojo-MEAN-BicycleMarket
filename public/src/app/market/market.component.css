@@ -1,0 +1,26 @@
+.inline {
+  display: inline-block;
+}
+
+.float {
+  float: right;
+}
+
+img {
+  height: 200px;
+  width: 250px;
+}
+
+.row {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.card {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.card .btn {
+  margin: auto;
+}

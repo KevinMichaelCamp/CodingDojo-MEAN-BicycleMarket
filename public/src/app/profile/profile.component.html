@@ -1,0 +1,18 @@
+<div *ngIf="user" class="container">
+  <h3>User Profile</h3>
+  <p class="lead inline">Name: {{ user.firstName }} {{ user.lastName }} | Email: {{ user.email }}</p>
+  <a [routerLink]="['/edituser']" class="btn btn-sm inline float ml-2">Edit User Info</a>
+  <a [routerLink]="['/addbike']" class="btn btn-sm inline float">Add Bike</a>
+  <div class="row mt-5">
+    <div *ngFor="let bike of bikes" class="col-4">
+      <div class="card">
+        <h6>{{ bike.title }}</h6>
+        <img [src]="bike.imgurl" alt="bikeimg">
+        <p class="small">{{ bike.description }}</p>
+        <p class="small">{{ bike.location }}</p>
+        <p class="small inline">{{ bike.price | currency }}</p>
+        <a [routerLink]="['/editbike/' + bike._id]" class="btn btn-sm">Edit Bike</a>
+      </div>
+    </div>
+  </div>
+</div>

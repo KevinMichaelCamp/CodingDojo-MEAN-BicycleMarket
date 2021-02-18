@@ -1,0 +1,16 @@
+<div *ngIf="user" class="container">
+  <h3>Edit User Info</h3>
+  <form (submit)="onEdit()" class="form w-75">
+    <input class="form-control" type="text" [ngModel]="user?.firstName" (ngModelChange)="user.firstName = $event"
+      name="firstName" placeholder="first name">
+    <input class="form-control" type="text" [ngModel]="user?.lastName" (ngModelChange)="user.lastName = $event"
+      name="lastName" placeholder="last name">
+    <input class="form-control" type="email" [ngModel]="user?.email" (ngModelChange)="user.email = $event" name="email"
+      placeholder="email">
+    <input class="form-control" type="password" [ngModel]="user?.password" (ngModelChange)="user.password = $event"
+      name="password" placeholder="password">
+    <input class="form-control" type="password" [ngModel]="user?.confirm" (ngModelChange)="user.confirm = $event"
+      name="confirm" placeholder="confirm password">
+    <button class="btn mb-2" type="submit">Submit</button>
+  </form>
+</div>
